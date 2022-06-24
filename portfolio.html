@@ -5,31 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- header with information about contact, portfiolio and agency -->
     <header>
-      <a href="index.html">WebStudio</a>
+      <a href="index.html"
+        ><span class="logo"><span class="logo-part">Web</span>Studio</span></a
+      >
       <nav>
         <ul>
-          <li><a href="Agencja">Agencja</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="Kontakt">Kontakt</a></li>
+          <li>
+            <a class="link" href="Agencja"
+              ><span class="link-top">Agencja</span></a
+            >
+          </li>
+          <li>
+            <a class="link" href="portfolio.html"
+              ><span class="link-top">Portfolio</span></a
+            >
+          </li>
+          <li>
+            <a class="link" href="Kontakt"
+              ><span class="link-top">Kontakty</span></a
+            >
+          </li>
         </ul>
       </nav>
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a><br />
-      <a href="tel:+48111111111">+48 111 111 111</a>
+      <a class="link-contact" href="mailto:info@devstudio.com"
+        ><span class="link-top">info@devstudio.com</span></a
+      ><br />
+      <a class="link" href="tel:+48111111111"
+        ><span class="link-contact">+48 111 111 111</span></a
+      >
     </header>
     <main>
       <!-- images with things i made "portfolio" -->
       <div>
         <div>
           <ul>
-            <li><button type="button">Wszystkie</button></li>
-            <li><button type="button">Strony</button></li>
-            <li><button type="button">Aplikacje</button></li>
-            <li><button type="button">Design</button></li>
-            <li><button type="button">Marketing</button></li>
+            <li><button class="button-portfolio" type="button"><span class="text-button-portofolio">Wszystkie</span></button></li>
+            <li><button class="button-portfolio" type="button"><span class="text-button-portofolio">Strony</span></button></li>
+            <li><button class="button-portfolio" type="button"><span class="text-button-portofolio">Aplikacje</span></button></li>
+            <li><button class="button-portfolio" type="button"><span class="text-button-portofolio">Design</span></button></li>
+            <li><button class="button-portfolio" type="button"><span class="text-button-portofolio">Marketing</button></li>
           </ul>
         </div>
 
@@ -44,7 +70,7 @@
                   height="294"
                 />
                 <figcaption>
-                  <p>Technocrack</p>
+                  <h4>Technocrack</h4>
                   <p>Strona internetowa</p>
                 </figcaption>
               </figure>
@@ -173,11 +199,17 @@
       </div>
     </main>
     <footer>
-      <ul>
-        <li><a href="index.html">WebStudio</a></li>
+      <ul class="social-links">
+        <a href="index.html"
+          ><span class="logo"><span class="logo-part">Web</span><span class="logo-part2">Studio</span></a
+        >
         <li><address>m. Warszawa, Aleje Jerozolimskie 21</address></li>
-        <li><a href="mailto:info@example.com">info@example.com</a></li>
-        <li><a href="tel:+48111111111">+48 111 111 111</a></li>
+        <a class="link-contact" href="mailto:info@devstudio.com"
+          ><span class="link-top">info@devstudio.com</span></a
+        ><br />
+        <a class="link" href="tel:+48111111111"
+          ><span class="link-contact">+48 111 111 111</span></a
+        >
       </ul>
     </footer>
   </body>
