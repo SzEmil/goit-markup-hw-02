@@ -15,9 +15,12 @@ body {
   --logo-color2: black;
   --header-text-color: #212121;
   --button-bacground-portfolio: #f5f4fa;
+  --our-team-background: #f5f4fa;
 }
 /* styl naglowka */
 header {
+  left: 0px;
+  top: 0px;
 }
 /* style linków: brak podkreslenia */
 a {
@@ -121,6 +124,14 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.photo-title-main {
+  font-size: 16px;
+  line-height: 19px;
+
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 h3 {
   font-weight: 700;
   font-size: 14px;
@@ -128,14 +139,9 @@ h3 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-h4 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
 
-  /* identical to box height */
-  text-align: center;
-  letter-spacing: 0.03em;
+.our-team {
+  background-color: var(--our-team-background);
 }
 ul {
   list-style-type: none;
@@ -154,7 +160,7 @@ footer {
   background: var(--main-baner-color);
 }
 
-/* STYLE DO PORTFOLIO  */
+/*----------------- STYLE DO PORTFOLIO  ---------------------------*/
 .button-portfolio {
   cursor: pointer;
   background: var(--button-bacground-portfolio);
@@ -162,6 +168,10 @@ footer {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--button-color);
 }
 .text-button-portofolio {
   font-weight: 700;
@@ -171,4 +181,16 @@ footer {
   /* identical to box height, or 188% */
   letter-spacing: 0.06em;
   color: var(--basic-text-color);
+}
+.text-button-portofolio:hover,
+.text-button-portofolio:active {
+  color: var(--white-color);
+}
+.photo-title-portfolio {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
 }
