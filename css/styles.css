@@ -32,35 +32,35 @@ header {
 a {
   text-decoration: none;
 }
-/* styl bazowy jako rodzic --- przy okazji jest to priorytet (3) rzedu czyli .klasa */
-.social-link.link-info.link-contact.adres-link {
+/* styl bazowy jako rodzic(linki z contentem, kontaktem i adresem --- przy okazji jest to priorytet (3) rzedu czyli .klasa */
+.social-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-.link-info {
+.social-link .link-info {
   color: var(--basic-text-color);
 }
 /* styl z pseudoklasą hover: interakcja po najechaniu myszką czy klawiaturą */
-.link-info:hover,
-.link-info:focus {
+.social-link .link-info:hover,
+.social-link .link-info:focus {
   color: var(--links-color);
 }
-.link-info:active {
+.social-link .link-info:active {
   color: var(--links-color);
 }
-.link-contact {
+.social-link .link-contact {
   color: var(--paragraph-link-content);
 }
-.link-contact:hover,
-.link-contact:focus {
+.social-link .link-contact:hover,
+.social-link .link-contact:focus {
   color: var(--links-color);
 }
-.link-contact:active {
+.social-link .link-contact:active {
   color: var(--links-color);
 }
-.adres-link {
+.social-link .link-adres {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -69,6 +69,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
+
 /* styl dla logo webstudio */
 .logo {
   font-family: "Raleway";
@@ -96,16 +97,7 @@ a {
   background: var(--main-baner-color);
   text-align: center;
 }
-/* styl dla naglowkow h1:w glownym miejscu strony, h2: podtytuły sekcji, h3: podtytuły paragrafu */
-h1 {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  color: #ffffff;
-  /* or 136% */
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
+
 /* Głowny przycisk strony main */
 .button-main {
   cursor: pointer;
@@ -123,6 +115,16 @@ h1 {
   /* identical to box height, or 188% */
   letter-spacing: 0.06em;
   color: var(--white-color);
+}
+/* styl dla naglowkow h1:w glownym miejscu strony, h2: podtytuły sekcji, h3: podtytuły paragrafu */
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  color: #ffffff;
+  /* or 136% */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 h2 {
   font-weight: 700;
