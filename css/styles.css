@@ -3,6 +3,9 @@ body {
   background-color: #ffffff;
   color: #212121;
 }
+
+/* POTEM DODAĆ WAŻNE: MNOŻNIK LINE HEIGHT= TO line-height/font-size */
+
 /* ustawienei najnizszego rzedu(4) do usuniecia bazowych marginesów we wszystkich elementach */
 * {
   margin: 0;
@@ -35,6 +38,7 @@ a {
 /* styl bazowy jako rodzic(linki z contentem, kontaktem i adresem --- przy okazji jest to priorytet (3) rzedu czyli .klasa */
 .social-link {
   font-weight: 500;
+  /* line-height: 1.14; */
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
@@ -133,13 +137,25 @@ h2 {
   text-align: center;
   letter-spacing: 0.03em;
 }
+/* Styl do nagłówków fotek */
 .photo-title-main {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* text-align: center; */
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+}
+.photo-description-main {
+  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
 
   /* identical to box height */
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.03em;
+  color: var(--paragraph-link-content);
 }
 h3 {
   font-weight: 700;
@@ -169,6 +185,7 @@ footer {
 .button-portfolio:hover,
 .button-portfolio:focus {
   background-color: var(--button-color);
+  color: var(--button-bacground-portfolio);
 }
 .text-button-portofolio {
   font-weight: 700;
@@ -190,4 +207,14 @@ footer {
 
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
+}
+
+.photo-description-portfolio {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+
+  /* identical to box height, or 188% */
+  letter-spacing: 0.03em;
+  color: var(--paragraph-link-content);
 }
