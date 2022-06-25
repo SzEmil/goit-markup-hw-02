@@ -3,6 +3,12 @@ body {
   background-color: #ffffff;
   color: #212121;
 }
+/* ustawienei najnizszego rzedu(4) do usuniecia bazowych marginesów we wszystkich elementach */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 /* zmienne globalne dla:kolorów tekstu,tła,zaznaczanie */
 :root {
   --white-color: #ffffff;
@@ -26,27 +32,27 @@ header {
 a {
   text-decoration: none;
 }
-/* styl bazowy jako rodzic */
-.link {
+/* styl bazowy jako rodzic --- przy okazji jest to priorytet (3) rzedu czyli .klasa */
+.social-link.link-info.link-contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: var(--header-text-color);
+}
+.link-info {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--basic-text-color);
 }
 /* styl z pseudoklasą hover: interakcja po najechaniu myszką czy klawiaturą */
-.link:hover,
-.link:focus {
+.link-info:hover,
+.link-info:focus {
   color: var(--links-color);
 }
-.link:active {
+.link-info:active {
   color: var(--links-color);
-}
-.link-top {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
 }
 .link-contact {
   font-weight: 500;
@@ -62,6 +68,7 @@ a {
 .link-contact:active {
   color: var(--links-color);
 }
+
 /* styl dla logo webstudio */
 .logo {
   font-family: "Raleway";
@@ -143,9 +150,7 @@ h3 {
 .our-team {
   background-color: var(--our-team-background);
 }
-ul {
-  list-style-type: none;
-}
+
 /* styl dla adresu */
 address {
   font-weight: 400;
