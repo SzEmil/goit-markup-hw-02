@@ -17,7 +17,7 @@ body {
   --button-color: #2196f3;
   --links-color: #2196f3;
   --logo-color1: #2196f3;
-  --paragraph-content: #757575;
+  --paragraph-link-content: #757575;
   --logo-color2: black;
   --header-text-color: #212121;
   --button-bacground-portfolio: #f5f4fa;
@@ -33,17 +33,13 @@ a {
   text-decoration: none;
 }
 /* styl bazowy jako rodzic --- przy okazji jest to priorytet (3) rzedu czyli .klasa */
-.social-link.link-info.link-contact {
+.social-link.link-info.link-contact.adres-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
 }
 .link-info {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
   color: var(--basic-text-color);
 }
 /* styl z pseudoklasą hover: interakcja po najechaniu myszką czy klawiaturą */
@@ -55,11 +51,7 @@ a {
   color: var(--links-color);
 }
 .link-contact {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--paragraph-link-content);
 }
 .link-contact:hover,
 .link-contact:focus {
@@ -68,7 +60,15 @@ a {
 .link-contact:active {
   color: var(--links-color);
 }
+.adres-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
 /* styl dla logo webstudio */
 .logo {
   font-family: "Raleway";
@@ -89,7 +89,7 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: var(--paragraph-content);
+  color: var(--paragraph-link-content);
 }
 /* styl głównego banerru z przyciskiem */
 .top-banner {
@@ -151,16 +151,6 @@ h3 {
   background-color: var(--our-team-background);
 }
 
-/* styl dla adresu */
-address {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-
-  /* or 171% */
-  letter-spacing: 0.03em;
-  color: var(--white-color);
-}
 footer {
   background: var(--main-baner-color);
 }
