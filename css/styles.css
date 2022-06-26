@@ -25,6 +25,7 @@ body {
   --header-text-color: #212121;
   --button-bacground-portfolio: #f5f4fa;
   --our-team-background: #f5f4fa;
+  --link-contact-footer: rgba(255, 255, 255, 0.6);
 }
 /* styl naglowka */
 header {
@@ -181,13 +182,7 @@ footer {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-}
-.button-portfolio:hover,
-.button-portfolio:focus {
-  background-color: var(--button-color);
-  color: var(--button-bacground-portfolio);
-}
-.text-button-portofolio {
+
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -196,10 +191,12 @@ footer {
   letter-spacing: 0.06em;
   color: var(--basic-text-color);
 }
-.text-button-portofolio:hover,
-.text-button-portofolio:active {
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--button-color);
   color: var(--white-color);
 }
+
 .photo-title-portfolio {
   font-weight: 700;
   font-size: 18px;
@@ -217,4 +214,20 @@ footer {
   /* identical to box height, or 188% */
   letter-spacing: 0.03em;
   color: var(--paragraph-link-content);
+}
+.link-contact-footer {
+  color: var(--link-contact-footer);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  /* or 171% */
+  letter-spacing: 0.03em;
+}
+.link-contact-footer:hover,
+.link-contact-footer:focus {
+  color: var(--links-color);
+}
+.link-contact-footer .link-mail-portfolio {
+  text-decoration: underline;
 }
